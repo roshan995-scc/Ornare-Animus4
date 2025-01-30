@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Anxiety Score</title>
+    <link rel="stylesheet" href="anxiety-score.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets/2rds.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Ornare Animus</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+    </nav>
+<br><br><br><br><br><br><br>
+    <!-- Anxiety Score Section -->
+    <div class="anxiety-container">
+        <header>
+            <h1>Check Your Anxiety Score</h1>
+            <p>Answer a few questions to know about your current anxiety level.</p>
+        </header>
+
+        <form id="anxiety-form">
+            <div class="question">
+                <label>1. Do you often feel restless or on edge?</label>
+                <select name="q1" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="1">Never</option>
+                    <option value="2">Rarely</option>
+                    <option value="3">Sometimes</option>
+                    <option value="4">Often</option>
+                    <option value="5">Always</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>2. Do you have difficulty sleeping or staying asleep?</label>
+                <select name="q2" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="1">Never</option>
+                    <option value="2">Rarely</option>
+                    <option value="3">Sometimes</option>
+                    <option value="4">Often</option>
+                    <option value="5">Always</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>3. Do you feel overwhelmed by daily tasks?</label>
+                <select name="q3" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="1">Never</option>
+                    <option value="2">Rarely</option>
+                    <option value="3">Sometimes</option>
+                    <option value="4">Often</option>
+                    <option value="5">Always</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>4. Do you experience physical symptoms like sweating or trembling?</label>
+                <select name="q4" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="1">Never</option>
+                    <option value="2">Rarely</option>
+                    <option value="3">Sometimes</option>
+                    <option value="4">Often</option>
+                    <option value="5">Always</option>
+                </select>
+            </div>
+
+            <button type="submit">Calculate Score</button>
+        </form>
+
+        <div id="result">
+            <p>Your anxiety score will appear here.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Ornare Animus </p>
+       
+    </footer>
+
+    <script src="anxiety-score.js"></script>
+</body>
+
+
+
+</html>

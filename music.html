@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Mental Health Haven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="nav-title">Ornare Animus</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="music-page">
+            <h1>Music for Every Mood</h1>
+            <p>Select a mood to explore curated music suggestions:</p>
+            <div class="mood-buttons">
+                <button class="mood-btn" onclick="showSuggestions('calm')">Calm</button>
+                <button class="mood-btn" onclick="showSuggestions('happy')">Happy</button>
+                <button class="mood-btn" onclick="showSuggestions('focus')">Focus</button>
+               
+            </div>
+
+            <div id="suggestions" class="suggestions hidden">
+                <h2 id="mood-title"></h2>
+                <ul id="music-links"></ul>
+                <button class="close-btn" onclick="hideSuggestions()">Close</button>
+            </div>
+            <div id="suggestions" class="suggestions">
+                <h2 id="mood-title"></h2>
+                <ul id="music-links"></ul>
+                <button onclick="hideSuggestions()">Close</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ornare Animus</p>
+        
+    </footer>
+
+    <script src="music.js"></script>
+</body>
+</html>

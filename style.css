@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%) blur(2px);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #4682B4;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #4682B4;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #76C7C0;
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero h1 {
+    color: #4682B4;
+    font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-family:'';
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.cta-button {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #4682B4;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #76C7C0;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #76C7C0;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* 🌍 Global Reset & Responsive Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/* 🌟 Make All Containers Responsive */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🟦 Navigation Bar Responsive */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #76c7c0;
+}
+
+/* 🛠 Responsive Navbar for Mobile */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+/* 📜 Hero Section (Front Page) */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* 📱 Responsive Hero Section */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+/* 🕰️ Meditation Timer Page */
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.timer-input {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* 📱 Responsive Timer */
+@media screen and (max-width: 768px) {
+    .timer-container {
+        padding: 30px 10px;
+    }
+
+    .timer-input {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* 🎵 Music Page */
+.mood-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.mood-box {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.mood-box:hover {
+    transform: scale(1.1);
+}
+
+/* 📱 Responsive Music Page */
+@media screen and (max-width: 768px) {
+    .mood-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mood-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* 📝 Journal Page */
+.journal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.journal-section {
+    width: 48%;
+}
+
+/* 📱 Responsive Journal Page */
+@media screen and (max-width: 768px) {
+    .journal-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .journal-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* 🧑‍⚕️ Therapist Page */
+.therapist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.therapist-card {
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 📱 Responsive Therapist Page */
+@media screen and (max-width: 768px) {
+    .therapist-card {
+        width: 100%;
+    }
+}
+
+/* 💬 Chatbot Page */
+#chat-container {
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 📱 Responsive Chatbot Page */
+@media screen and (max-width: 768px) {
+    #chat-container {
+        width: 90%;
+    }
+}
+
+/* 🔚 Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 📱 Responsive Footer */
+@media screen and (max-width: 768px) {
+    .footer {
+        font-size: 0.9rem;
+    }
+}

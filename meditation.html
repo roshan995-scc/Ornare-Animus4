@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Zone</title>
+    <link rel="stylesheet" href="meditation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets/stations.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Ornare Animus</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+         </ul>
+    </nav>
+
+    <!-- Meditation Section -->
+    <div class="meditation-container">
+        <header>
+            <h1>Welcome to the Meditation Zone</h1>
+            <p>Set your meditation timer and find your inner peace.</p>
+        </header>
+
+        <div class="timer-container">
+            <label for="time-input">Enter Time (minutes):</label>
+            <input type="number" id="time-input" placeholder="e.g., 5">
+            <button id="start-timer">Start Timer</button>
+        </div>
+
+        <div class="countdown">
+            <p id="countdown-text">Timer will display here.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Ornare Animus </p>
+      
+        
+    </footer>
+
+    <script src="meditation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Amigo</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Add this to your <head> section -->
+        <script>
+            const OPENAI_PROXY_URL = 'https://api.pawan.krd/gpt'; // Free OpenAI proxy
+          </script>
+    <script defer src="chatbot.js"></script>
+</head>
+<body>
+  
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"> Ornare Animus <br>(Amigo &#9829;)</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meditation.html"</a></li>
+            <li><a href="journal.html"></a></li>
+            <li><a href="music.html"></a></li>
+            <li><a href="therapist.html"></a></li>
+           
+        </ul>
+    </nav>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="chat-message bot">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Footer --><footer>
+        <p>© 2025 Ornare Animus the Backend is still under devlopment by the <a href="team.html">team</a> its just a working protoype</p>
+    </footer>
+
+</body>
+</html>
